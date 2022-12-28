@@ -66,10 +66,7 @@ address {
   width: 1200px;
   outline: 2px solid tomato;
 }
-/* page header */
-.page-header {
-  background-color: #ccc;
-}
+
 
 .logo {
   color: var(--logo-color);
@@ -118,6 +115,11 @@ address {
 .nav-footer:hover,
 .nav-footer
 .nav:hover:focus {
+  color: var(--accent-color);
+}
+
+.nav:hover,
+.nav:focus {
   color: var(--accent-color);
 }
 
@@ -204,4 +206,26 @@ margin-bottom: 10;
 
 .button-first :hover .button-first :focus {
   background-color: var(--accent-color);
+}
+
+/* footer */
+.footer {
+background: #2F303A;
+ height: 252px;
+ }
+/* port */
+.list-port {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom:  94px;
+}
+
+
+.nav-port {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.page-header-port {
+  margin-top: 0;
+  margin-bottom: 0;
 }
