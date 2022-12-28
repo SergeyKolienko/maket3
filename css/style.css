@@ -67,7 +67,14 @@ address {
   outline: 2px solid tomato;
 }
 
-
+.logo-footer{
+  color: var(--primary-white-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
 .logo {
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
@@ -78,6 +85,10 @@ address {
 }
 .logo:hover,
 .logo:focus {
+  color: var(--accent-color);
+}
+.logo-footer:hover,
+.logo-footer:focus {
   color: var(--accent-color);
 }
 
