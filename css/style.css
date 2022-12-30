@@ -44,6 +44,12 @@ button {
 .button-first:focus {
 }
 
+/* утилита */
+.nav-port {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Убираем маркеры */
 li {
   list-style-type: none;
@@ -92,7 +98,30 @@ address {
   color: var(--accent-color);
 }
 
+.page-header-port {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* site nav */
+
+.site-nav {
+display: flex;
+margin-left: 95px;
+}
+
+.site-nav .item {
+  background-color: tomato;
+  /* margin-right: 40px; */
+}
+
+/* .site-nav .item:last-child {
+  margin-right: 0;
+} */
+
+.site-nav .item:not( :last-child) {
+  margin-right: 40px;
+}
 .site-nav .link {
   color: var(--title-text-color);
   text-decoration: none;
@@ -232,11 +261,3 @@ background: #2F303A;
 }
 
 
-.nav-port {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.page-header-port {
-  margin-top: 0;
-  margin-bottom: 0;
-}
