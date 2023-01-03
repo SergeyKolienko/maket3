@@ -27,8 +27,7 @@ button {
   font-size: 16px;
   line-height: 30px;
 
-  display: flex;
-  align-items: center;
+  display: block;
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -54,7 +53,10 @@ button {
 li {
   list-style-type: none;
 }
-
+ul {
+  padding: 0px;
+  margin: 0px;
+}
 address {
   font-style: normal;
 }
@@ -67,9 +69,12 @@ address {
   color: #2196f3;
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid tomato;
 }
 
@@ -82,6 +87,7 @@ address {
   text-decoration: none;
 }
 .logo {
+  
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -103,32 +109,43 @@ address {
   margin-bottom: 0;
 }
 
+/* main nav */
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
 /* site nav */
 
 .site-nav {
 display: flex;
-margin-left: 95px;
+align-items: center;
+justify-content: flex-start;
+margin-left: 93px;
 }
 
 .site-nav .item {
-  background-color: tomato;
+  /* background-color: tomato; */
   /* margin-right: 40px; */
 }
 
-/* .site-nav .item:last-child {
-  margin-right: 0;
-} */
-
-.site-nav .item:not( :last-child) {
-  margin-right: 40px;
+.site-nav .item + .item {
+  margin-left: 40px;
 }
+/* .site-nav .item:not( :last-child) {
+  margin-right: 40px;
+} */
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
 }
 
 .site-nav .link:hover,
@@ -140,9 +157,14 @@ margin-left: 95px;
   color: var(--accent-color);
   text-decoration: none;
 }
-
+.nav-list {
+  display: flex;
+  margin-left: auto;
+}
 /* nav */
 .nav {
+  display: flex;
+  margin-left: auto;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -152,6 +174,11 @@ margin-left: 95px;
   padding: 0;
   margin: 0;
 }
+
+.nav-list .item + .item {
+  margin-left: 50px;
+}
+
 .nav-footer:hover,
 .nav-footer
 .nav:hover:focus {
@@ -203,7 +230,7 @@ margin-left: 95px;
    margin-bottom: 0;
 }
 .section-benefits {
-  margin-top: 95px;
+  margin-top: 59px;
   margin-bottom:  100px;
 }
 .section-list-header {
@@ -211,12 +238,20 @@ margin-top: 0;
 margin-bottom: 10;
 }
 .section-list {
+  display: flex;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.03em;
 }
+
+.section-list .item + .item {
+  margin-left: 30px;
+
+  }
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -227,29 +262,33 @@ margin-bottom: 10;
   margin-bottom: 60;
 }
 .non-pading {
+display: flex;
   margin-bottom: 0;
 }
-
-/* Button */
-.button-first {
-  cursor: pointer;
-  color: var(--title-text-color);
-  background-color: var(--accent-color);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.2;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.non-pading .item + .item {
+  margin-left: 30px;
+}
+/* Testimonial */
+.teachers {
+  display: flex;
 }
 
-.button-first :hover .button-first :focus {
-  background-color: var(--accent-color);
+.teachers .item + .item {
+  margin-left: 30px;
+}
+.teachers .item {
+  text-align: center;
+}
+
+
+.section-testimonial{
+  margin-top: 188px;
+  
 }
 
 /* footer */
 .footer {
+  margin-top: 94px;
 background: #2F303A;
  height: 252px;
  }
@@ -260,4 +299,24 @@ background: #2F303A;
   margin-bottom:  94px;
 }
 
+/* portfolio flex */
+.filter {
+  display: flex;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: teal; */
+}
+ .portfolio-item {
+    width: 370px;
+    /* background-color: tomato; */
+    margin-right: 30px;
 
+}
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+
+/* button portfolio */
